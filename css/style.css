@@ -1,0 +1,439 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+    /*header*/
+header li a{
+    color: #000;
+}
+
+header{
+    /*background-color: gray;*/
+    max-width: 1100px;
+    height: 115px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.home_txt{
+    position: relative;
+}
+
+.home_txt:before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #42a7db;
+    width: 40px;
+    top: 24px;
+    left: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+    /*menu*/
+.logo img {
+    width: 70%;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menu li a{
+    font-size: 20px;
+    transition: all 0.3 ease 0s;
+}
+
+.menu li a:hover{
+    border-bottom: 3px solid #42a7db;
+    color: #42a7db;
+}
+
+
+
+
+
+
+
+
+    /*banner*/
+#banner {
+    background-color: black; 
+    background-image: url('../imagens/foto2.jpg');
+    
+    text-align-last: right; 
+
+    /* border: 1px solid red; */
+}
+
+#banner h2{
+    color: #ffff;
+    font-size: 80px;
+    line-height: 1;
+    margin-bottom: 28px;
+    text-shadow: 3px 3px rgb(170, 170, 170); 
+    
+    /* border: 1px solid green; */
+}
+
+#banner p{
+    color: #ffff;
+    font-size: 18px;
+    margin-bottom: 28px;
+    line-height: 1.5;
+    text-shadow: 3px 3px rgb(170, 170, 170); 
+
+    /* border: 1px solid blue; */
+}
+
+#banner .container .content{
+    /*background-color: rgb(238, 76, 76);*/
+    padding: 50px 0;
+
+    /* border: 1px solid violet; */
+}
+
+#banner .container{
+    /*background-color: black;*/
+    max-width: 1100px;
+    padding: 50px 0;
+    margin: 0 auto;
+
+    /* border: 1px solid yellow; */
+}
+
+#banner .container button{
+    color: #ffff;
+    font-size: 15px;
+    font-weight: light;
+    padding: 11px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: #42a7db;
+}
+
+#banner .container button:hover{
+    color: #42a7db;
+    box-shadow: 3px 3px rgb(170, 170, 170);
+    background-color: #ffff;
+}
+
+
+
+
+
+
+
+
+    /*boxes*/
+
+.servicos{
+    max-width: 1100px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 70px 0;
+    /* border: 1px solid green; */
+}
+
+.flex div{
+    background-color: #f0f0f0;
+    width: 325px;
+    height: 325px;
+    /* border: 1px solid green; */
+}
+
+.flex div:hover{
+    background-color: #dcdcdc;
+}
+
+.flex div img{
+    margin-top: 50px;
+    /* border-bottom: 3px solid #42a7db; */
+}
+
+.flex div h2{
+    font-size: 28px;
+    margin: 30px 0;
+    position: relative;
+}
+.flex div h2:before {
+    content: "";
+    position: absolute;
+    border-bottom: 3px solid #42a7db;
+    width: 100px;
+    left: 113px;
+    bottom: 50px
+}
+
+.flex div p{
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 25px;
+}
+
+
+
+
+
+
+    /* Sobre */
+.sobre{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto; 
+    margin-bottom: 100px;  
+}
+
+.text h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 2.5;
+    margin-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+    /*Nossa História/Missão*/
+.historia{width: 100%; 
+    
+    margin: 80px 0;
+    padding: 30px 0 30px 0;
+    background-color: #f0f0f0; 
+}
+
+.split{
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.box{
+    display: flex;
+    /* border: 1px solid orange; */
+}
+
+.column{
+    width: 50%;
+    /* border: 1px solid red; */
+}
+
+.column .content{
+    margin: 30px 0;
+    max-width: 80%;
+    /* border: 1px solid green; */
+}
+
+.column .content h2{font-size: 25px; font-weight: bold; padding-bottom: 10px;}
+
+.column .content p{font-size: 15px;}
+
+.icon{margin-right: 20px;}
+
+.icon img{
+    width: 50px;
+    /* border: 1px solid violet; */
+}
+
+.img{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items:center;
+    /* border: 1px solid blue;  */
+}
+
+
+
+
+
+
+
+
+    /* Nossa história/Nossa missão */
+section.hist{
+    width: 100%;
+    margin-bottom: 100px;
+    
+    background-color: #f0f0f0;
+}
+
+.container-hist{
+    max-width: 1100px;
+    height: 100%;
+    padding: 20px;
+
+    margin: 0 auto;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    /*footer*/
+footer{
+    background-color: #21272a; 
+}
+
+.footer_container{
+    height: 400px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.container-content{
+    display: flex;
+    max-width: 1100px;
+    /* border: 1px solid green; */
+}
+
+
+        /* colunas */
+.coluna{
+    width: 25%;
+    max-height: 350px;
+    color: #ffff;
+    /* border: 1px solid blue; */
+}
+
+
+.coluna img{width: 65%;}
+
+
+.coluna h4{
+    font-weight: bold;
+    font-size: 20px;
+    color: #42a7db;
+    margin-bottom: 30px;
+}
+
+.coluna a{
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.coluna a:hover{color:#42a7db;}
+
+.coluna p{
+    width: 70%;
+    /* border: 1px solid rgb(42, 112, 179);   */
+ }
+
+.dot-link{
+    display: flex;
+    /* border: 1px solid rgb(234, 0, 255) */
+}
+
+.fa-link{
+    color: #42a7db;
+}
+
+.dot-link a{
+    margin-left: 20px;
+}
+
+
+
+    /* Coluna de contatos*/
+.coluna{
+    width: 25%;
+    /* border: 1px solid red */
+}
+
+.coluna div{
+    display: flex;
+    color: white;
+}
+
+.coluna h4{
+    color: #42a7db; 
+    font-size: 20px; 
+}
+
+.coluna div:hover{
+    color: #42a7db;
+}
+    /* Coluna de contatos */
+
+
+
+
+
+
+    /* Direitos */
+.direitos{
+    width: 100%;
+    height: 80px;
+
+    text-align: center;
+
+    background-color: #1e2326;
+}
+
+.direitos .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.direitos .container h4{
+    font-size: 15px;
+    color: white;
+    font-weight: normal;
+
+}
